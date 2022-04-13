@@ -1,0 +1,101 @@
+.search-page {
+	padding: 80px 0;
+
+	&__title {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $gray;
+	}
+}
+.search-post {
+	margin-bottom: 20px;
+
+	&__title {
+		font-size: 20px;
+		font-weight: normal;
+		border: 1px solid $light-gray;
+		background-color: $light-gray;
+		display: flex;
+
+		span {
+			padding: 15px 10px;
+			width: 175px;
+			flex-shrink: 0;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+		}
+
+		a {
+			width: 100%;
+			text-transform: none;
+			background-color: $white;
+			padding: 15px 10px;
+		}
+	}
+}
+.search-wrap {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	@media screen and (max-width: 768px) {
+		
+	}
+	.search-facets {
+		@media screen and (min-width: 768px) {
+			padding-right: 50px;
+		}
+		@media screen and (max-width: 768px) {
+			
+		}
+		.facetwp-type-search {
+			.facetwp-input-wrap {
+				border: 1.5px solid #C1C1C1;
+				border-radius: 50px;
+				width: 100%;
+				font-size: 14px;
+				line-height: 29px;
+				letter-spacing: .39px;
+				background: transparent;
+				padding-right: 50px;
+				padding-left: 20px;
+				height: 40px;
+				input[type="text"] {
+					border: none !important;
+				}
+			}
+		}
+		.facetwp-sort {
+			padding-bottom: 25px;
+			select {
+				border: 1.5px solid #C1C1C1;
+				border-radius: 50px;
+				width: 100%;
+				font-size: 14px;
+				line-height: 29px;
+				letter-spacing: .39px;
+				background: transparent;
+				padding-left: 20px;
+				height: 40px;
+			}
+		}
+		.facetwp-checkbox {
+			font-size: 14px;
+			line-height: 29px;
+			letter-spacing: .39px;
+			color: $p-color;
+		}
+	}
+	.search-results {
+		@media screen and (min-width: 768px) {
+			flex-grow: 1;
+		}
+		@media screen and (max-width: 768px) {
+			
+		}
+		.load-more-wrap {
+			text-align: center;
+		}
+	}
+}

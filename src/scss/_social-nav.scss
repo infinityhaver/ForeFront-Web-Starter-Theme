@@ -1,0 +1,33 @@
+.social-links {
+	@media screen and (min-width: 768px) {
+
+	}
+	@media screen and (min-width: 768px) {
+		
+	}
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		display: flex;
+		flex-flow: row nowrap;
+		@media screen and (min-width: 768px) {
+
+		}
+		@media screen and (min-width: 768px) {
+			
+		}
+		li {
+			margin-right: 10px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			a {
+				display: block;
+				&:hover {
+
+				}
+			}
+		}
+	}
+}

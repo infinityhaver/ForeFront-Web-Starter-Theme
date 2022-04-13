@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+	.utility-nav-wrap {
+		display: block !important;
+		nav {
+			ul {
+				border: none;
+				display: inline-block;
+				box-shadow: none !important;
+				li {
+					border: none;
+					a {
+
+						&:hover {
+							background: none;
+						}
+					}
+					&.active {
+						a {
+
+						}
+						ul {
+							li {
+								a {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.utility-nav-wrap {
+		display: none;
+		padding-top: 15px;
+		nav {
+			ul {
+				li {
+					a {
+
+					}
+					&.active {
+						a {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}

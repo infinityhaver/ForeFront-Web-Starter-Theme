@@ -1,0 +1,26 @@
+.wp-block {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.acf-layout-hidden {
+	background: #f2a7a7 !important;
+}
+.acf-fc-popup ul li a .acf-fc-popup-image {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: 732px 300px !important;
+}
+@media only screen and (min-width: 1200px) {
+	.acf-fc-popup ul li {
+		width: calc(100% / 3) !important;
+	}
+}
+
+/*======================================================
+Page Component Layout Preview IMages
+======================================================*/
+
+/* full_width */
+[data-layout="full_width"] .acf-fc-popup-image {
+	background: url('../img/block-previews/full-width.jpg') !important;
+}

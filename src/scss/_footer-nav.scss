@@ -1,0 +1,40 @@
+.footer-nav-wrap {
+	display: block !important;
+	nav {
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin-bottom: 0;
+			@media (min-width: 768px) {
+				display: flex;
+				flex-flow: row nowrap;
+			}
+			@media (max-width: 768px) {
+
+			}
+			li {
+				border: none;
+				a {
+					display: block;
+					clear: both;
+					float: none;
+					padding: 11px 20px;
+					&:hover {
+						background: none;
+					}
+				}
+				&.active {
+					a {
+
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 768px) {
+
+	}
+	@media (max-width: 768px) {
+
+	}
+}

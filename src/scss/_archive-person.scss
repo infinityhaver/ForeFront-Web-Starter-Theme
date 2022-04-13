@@ -1,0 +1,157 @@
+.people {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	@media screen and (max-width: 768px) {
+		
+	}
+	.person {
+		background: #fff;
+		box-shadow: 0 2px 10px rgba(0,0,0,.15);
+		@media screen and (min-width: 768px) {
+			width: 32%;
+			margin-right: 2%;
+			margin-bottom: 25px;
+			&:nth-of-type(3n) {
+				margin-right: 0;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			
+		}
+		&:hover {
+			.image-wrap {
+				.overlay {
+					height: 100%;
+					background: rgba(0,0,0,.8);
+					a {
+						.excerpt {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.image-wrap {
+			position: relative;
+			height: 300px;
+			width: 100%;
+			background-size: cover !important;
+			background-position: center !important;
+			background-repeat: no-repeat !important;
+			transition: all 0.5s ease;
+			overflow: hidden;
+			.overlay {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 0;
+				background: rgba(0,0,0,0);
+				transition: all 0.5s ease;
+				overflow-y: auto;
+				a {
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					transition: all 0.5s ease;
+					.excerpt {
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 0;
+						transition: all 0.5s ease;
+						color: rgba(255,255,255,0);
+						@media screen and (min-width: 768px) {
+							padding: 25px;
+						}
+						@media screen and (max-width: 768px) {
+							
+						}
+					}
+				}
+			}
+		}
+		.person-bottom {
+			padding: 25px;
+			@media screen and (min-width: 768px) {
+				
+			}
+			@media screen and (max-width: 768px) {
+				
+			}
+		}
+	}
+}
+.person-modal-wrap {
+	padding: 0 !important;
+	@media screen and (min-width: 768px) {
+		width: 90% !important;
+		max-width: 1100px !important;
+	}
+	@media screen and (max-width: 768px) {
+		width: 90% !important;
+	}
+	.person-modal {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-flow: row nowrap;
+		}
+		@media screen and (max-width: 768px) {
+			
+		}
+		.modal-left {
+			@media screen and (min-width: 768px) {
+				width: 50%;
+			}
+			@media screen and (max-width: 768px) {
+				
+			}
+			.image-wrap {
+				background-size: cover !important;
+				background-position: center !important;
+				background-repeat: no-repeat !important;
+				@media screen and (min-width: 768px) {
+					height: 500px;
+					width: 100%;
+				}
+				@media screen and (max-width: 768px) {
+					height: 400px;
+				}
+			}
+		}
+		.modal-right {
+			position: relative;
+			overflow: hidden;
+			@media screen and (min-width: 768px) {
+				width: 50%;
+				padding: 50px 0 50px 50px;
+				height: 500px;
+			}
+			@media screen and (max-width: 768px) {
+				padding: 50px 25px;
+			}
+			.content-wrap {
+				position: relative;
+				@media screen and (min-width: 768px) {
+					overflow-y: auto;
+					height: calc(100% - 75px);
+					padding-right: 50px;
+					padding-bottom: 50px;
+				}
+				@media screen and (max-width: 768px) {
+					
+				}
+			}
+		}
+	}
+}

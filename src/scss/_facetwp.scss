@@ -1,0 +1,26 @@
+.facetwp-facet-load_more {
+	text-align: center;
+}
+.facetwp-facet-search {
+	.facetwp-input-wrap {
+		width: 100%;
+		border: 1.5px solid #C1C1C1;
+		background: #fff;
+		border-radius: 50px;
+		max-width: 290px;
+		height: 40px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		.facetwp-search {
+			width: 100%;
+			font-size: 14px;
+			line-height: 29px;
+			letter-spacing: .39px;
+			background: transparent;
+			border: none;
+			padding-left: 20px;
+		}
+	}
+}

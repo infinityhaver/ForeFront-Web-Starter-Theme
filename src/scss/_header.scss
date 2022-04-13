@@ -1,0 +1,78 @@
+.site-header {
+	transition: all 0.25s ease;
+	background: #fff;
+	padding: 5px 0;
+	@media (min-width: 768px) {
+		
+	}
+	@media (max-width: 768px) {
+
+	}
+	.logo-nav-wrap {
+		@media (min-width: 768px) {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+		@media (max-width: 768px) {
+
+		}
+		.logo-burger {
+			@media (min-width: 768px) {
+
+			}
+			@media (max-width: 768px) {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.logo-wrap {
+				max-width: 200px;
+				a {
+					img {
+
+					}
+				}
+			}
+			.burger-wrap {
+				@media (min-width: 768px) {
+					display: none;
+				}
+				@media (max-width: 768px) {
+					display: block;
+				}
+				.hamburger {
+					.hamburger-box {
+						.hamburger-inner {
+							background-color: $brand;
+							&::before {
+								background-color: $brand;
+							}
+							&::after {
+								background-color: $brand;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Header offset to accomodate admin bar
+body.admin-bar {
+	.site-header {
+		@media screen and (min-width: 768px) {
+			top: 32px;
+		}
+		@media screen and (max-width: 768px) {
+			top: 46px;
+		}
+	}
+	#wpadminbar {
+		@media screen and (max-width: 600px) {
+			position: fixed;
+		}
+	}
+}

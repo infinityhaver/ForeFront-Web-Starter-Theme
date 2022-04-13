@@ -1,0 +1,124 @@
+.blog-wrap {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	@media screen and (max-width: 768px) {
+		
+	}
+	.blog-facets {
+		@media screen and (min-width: 768px) {
+			width: 300px;
+		}
+		@media screen and (max-width: 768px) {
+			
+		}
+	}
+	.blogs-container {
+		@media screen and (min-width: 768px) {
+			width: calc(100% - 200px);
+			padding-left: 25px;
+		}
+		@media screen and (max-width: 768px) {
+			
+		}
+		.blogs {
+			@media screen and (min-width: 768px) {
+				display: flex;
+				flex-flow: row wrap;
+			}
+			@media screen and (max-width: 768px) {
+				
+			}
+			.blog {
+				transition: all 0.5s ease;
+				background: #fff;
+				box-shadow: 0 2px 10px rgba(0,0,0,.15);
+				@media screen and (min-width: 768px) {
+					width: 32%;
+					margin-right: 2%;
+					margin-bottom: 25px;
+					&:nth-of-type(3n) {
+						margin-right: 0;
+					}
+				}
+				@media screen and (max-width: 768px) {
+					
+				}
+				&:hover {
+					.image-wrap {
+						.overlay {
+							height: 100%;
+							background: rgba(0,0,0,.8);
+							a {
+								.excerpt {
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+				.image-wrap {
+					position: relative;
+					height: 300px;
+					width: 100%;
+					background-size: cover !important;
+					background-position: center !important;
+					background-repeat: no-repeat !important;
+					transition: all 0.5s ease;
+					overflow: hidden;
+					.overlay {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 0;
+						background: rgba(0,0,0,0);
+						transition: all 0.5s ease;
+						overflow-y: auto;
+						a {
+							display: block;
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							transition: all 0.5s ease;
+							.excerpt {
+								position: absolute;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								left: 0;
+								width: 100%;
+								height: 0;
+								transition: all 0.5s ease;
+								color: rgba(255,255,255,0);
+								@media screen and (min-width: 768px) {
+									padding: 25px;
+								}
+								@media screen and (max-width: 768px) {
+									
+								}
+							}
+						}
+					}
+				}
+				.blog-bottom {
+					padding: 25px;
+					@media screen and (min-width: 768px) {
+						
+					}
+					@media screen and (max-width: 768px) {
+						
+					}
+				}
+			}
+		}
+		.no-results {
+			width: 100%;
+		}
+	}
+}

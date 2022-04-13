@@ -1,0 +1,141 @@
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+	padding: 15px 50px;
+	display: inline-block;
+	transition: all 0.5s ease;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	&.solid {
+		background: $brand;
+		color: #fff;
+		border: 1px solid $brand;
+		&:hover {
+			background: #fff;
+			color: $brand;
+		}
+	}
+	&.ghost {
+		background: transparent;
+		color: $brand;
+		border: 1px solid $brand;
+		&:hover {
+			background: $brand;
+			color: #fff;
+		}
+	}
+	&.dark {
+		background: $dark;
+		color: #fff;
+		border: 1px solid $dark;
+		&:hover {
+			background: #fff;
+			color: $dark;
+		}
+	}
+	&.dark-ghost {
+		background: transparent;
+		color: $dark;
+		border: 1px solid $dark;
+		&:hover {
+			background: $dark;
+			color: #fff;
+		}
+	}
+	&.white {
+		background: #fff;
+		color: $brand;
+		border: 1px solid #fff;
+		&:hover {
+			background: transparent;
+			color: #fff;
+		}
+	}
+	&.white-ghost {
+		background: transparent;
+		color: #fff;
+		border: 1px solid #fff;
+		&:hover {
+			background: #fff;
+			color: $brand;
+		}
+	}
+	&.btn-block {
+		display: block;
+		width: 100%;
+		clear: both;
+		float: none;
+		text-align: center;
+		transition: all 0.5s ease;
+	}
+}
+button,
+input[type="submit"],
+input[type="button"] {
+	background: $brand;
+	color: #fff;
+	border: 1px solid $brand;
+	&:hover {
+		background: #fff;
+		color: $brand;
+	}
+}
+.plus {
+	margin-top: -68px;
+	height: 68px !important;
+	padding-bottom: 68px;
+	display: block;
+}
+.plus-circle {
+	display: inline-block;
+	background-color: #fff;
+	border: 2px solid #fff;
+	width: 53px;
+	height: 53px;
+	margin: 0 auto;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	cursor: pointer !important;
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		background-color: $brand;
+		border-radius: 2px;
+		left: 0;
+		right: .5px;
+		top: 0;
+		bottom: 1px;
+		margin: auto;
+	}
+	&:before {
+		width: 21px;
+		height: 2px;
+	}
+	&:after {
+		width: 2px;
+		height: 21px;
+	}
+	&--animated {
+		transition: transform 0.2s linear;
+		transform: translate3d(0, 0, 0);
+		&:before,
+		&:after {
+			transition: inherit;
+		}
+		&:hover,
+		&:focus,
+		&.plus-circle--hover {
+			&:before {
+				transform: translate3d(2px, -5px, 0) rotate(45deg) scale3d(0.73, 1, 1);
+			}
+			&:after {
+				transform: translate3d(2px, 6px, 0) rotate(45deg) scale3d(1, 0.73, 1);
+			}
+		}
+	}
+}
